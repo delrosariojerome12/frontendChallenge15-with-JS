@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h5>SPLI</h1>
+        <h5>TTER</h1>
+      </header>
+      <main class="calc">
+          <section class="btn-side">
+              <div class="bill-con">
+                  <p style="font-size: 1.5rem;   color: var(--DarkGrayishCyan2); font-weight: 700">Bill</p>
+                  <input autocomplete="off" onkeypress="return isNumberKey(event)" type="text" name="bill" id="bill" >
+                  <i class="fas fa-dollar-sign"></i>
+              </div>
+              <div class="tip-btn-con">
+                  <p>Select Tip %</p>
+                  <button>5%</button>
+                  <button>10%</button>
+                  <button>15%</button>
+                  <button>25%</button>
+                  <button>50%</button>
+                  <input onkeypress="return isNumberKey(event)" type="text" id="custom" placeholder="Custom">
+              </div>
+              <div class="people-con">
+                  <p>Number of People</p>
+                  <input onkeypress="return isNumberKey(event)" type="text" id="people" placeholder="Person/s">
+                  <i class="fas fa-user"></i>
+              </div>
+          </section>
+          <section class="display-side">
+            <div class="display">
+              <div class="tip-amount">
+                <p>Tip Amount</p>
+                <p>/person</p>
+                <p id="tip-per-person">$0.00</p>
+              </div>
+              <div class="total">
+                <p>Tip Total</p>
+                <p>/amount</p>
+                <p id="tip-per-person-total">$0.00</p>
+              </div>
+              <button class="reset">RESET</button>
+            </div>
+          </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/b735554243.js" crossorigin="anonymous"></script>
+  </body>
+</html>

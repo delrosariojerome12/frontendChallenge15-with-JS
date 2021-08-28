@@ -1,0 +1,9 @@
+// my solution close but not enough
+// inputBill.addEventListener("keypress return", checkInput);
+// function checkInput(e) {
+//   let numbers = /^[0-9]+$/;
+//   if (e.target.value.match(numbers)) {
+//   } else {
+//     e.target.value = "";
+//   }
+// }
